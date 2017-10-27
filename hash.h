@@ -24,8 +24,6 @@ private:
         item* next;
     };
 
-    ///////////////////////////////////
-    /* This could cause an error because of the name HashTable */
     item* hash_table[tableSize];
 
 public:
