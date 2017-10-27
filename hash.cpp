@@ -167,12 +167,6 @@ void HashTable::RemoveItem(string name) {
             cout << name << " was removed from the hash table\n";
         }
     }
-
-
-
-
-
-
 }
 
 int HashTable::Hash(string key) {
@@ -185,15 +179,4 @@ int HashTable::Hash(string key) {
     index  = hash % tableSize;
 
     return index;
-
-//    unsigned int Init = 1234564352;
-//    unsigned int Magic = 5674356;
-//    unsigned int index;
-//    for(int i = 0; i < key.length(); i++){
-//        index = hash ^ (key[i]); //XOR each byte of input
-//        hash = hash * Magic; //Multiply by the magic number
-//    }
-//    return hash;
-
-
 }
